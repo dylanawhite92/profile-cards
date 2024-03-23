@@ -138,6 +138,7 @@ footer {
     display: none;
   }
 
+  /* Change size for iPad layout */
   .card {
     width: min(100%, 325px);
   }
@@ -157,9 +158,12 @@ footer {
 
 /* || LARGE */
 @media screen and (min-width: 992px) {
-  body {
-    background-color: firebrick;
-    background-image: radial-gradient(whitesmoke, firebrick);
+  .card {
+    width: min(100%, 400px);
+  }
+
+  .card:nth-child(2) {
+    order: -1;
   }
 }
 
