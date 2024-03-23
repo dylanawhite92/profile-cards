@@ -134,9 +134,24 @@ footer {
 
 /* || MEDIUM */
 @media screen and (min-width: 768px) {
-  body {
-    background-color: gold;
-    background-image: radial-gradient(whitesmoke, gold);
+  nav {
+    display: none;
+  }
+
+  .card {
+    width: min(100%, 325px);
+  }
+
+  .card figure {
+    flex-flow: column-reverse;
+  }
+
+  .card figcaption {
+    margin: 0.1em 0;
+  }
+
+  .card p {
+    margin-top: 1rem;
   }
 }
 
